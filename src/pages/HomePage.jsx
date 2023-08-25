@@ -21,7 +21,7 @@ function HomePage() {
 
     }, []);
 
-    if (!countries) {
+    if (countries.length === 0) {
         return <p>Loading...</p>
     }
 
