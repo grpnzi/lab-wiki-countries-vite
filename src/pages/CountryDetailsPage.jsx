@@ -19,7 +19,7 @@ function CountryDetails() {
             })
             .catch((err) => console.log(err))
 
-    }, [apiUrl]); // Add apiUrl to dependency array
+    }, [apiUrl]);
 
     if (!country) {
         return <p>Loading...</p>;

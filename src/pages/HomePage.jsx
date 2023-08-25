@@ -21,6 +21,10 @@ function HomePage() {
 
     }, []);
 
+    if (!countries) {
+        return <p>Loading...</p>
+    }
+
     return (
         <div className="container" style={{ maxHeight: '90vh', overflow: 'scroll' }}>
         <h1 style={{ fontSize: '24px' }}>WikiCountries: Your Guide to the World</h1>  
